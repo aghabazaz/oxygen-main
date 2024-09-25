@@ -1,0 +1,12 @@
+{
+  "topMenu": {
+    "home": "Home",
+    "products": "Products",
+    "querries": "Quarries",
+    "catalog": "Catalog",
+    "blogs": "Blogs",
+    "about": "About us",
+    "contact": "Contact us",
+    "search": "Search"
+  }
+}

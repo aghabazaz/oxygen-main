@@ -1,0 +1,49 @@
+import { fetcher } from "@/utils/fetcher";
+import useSWR from "swr";
+
+const init = {
+  title: "Quarries",
+  slug: "quarries",
+  sections: [
+    {
+      title: "Quarries",
+      description:
+        "<p>We can provide a diverse range of products by gathering stone blocks, including travertine and marble, etc., from different quarries.</p>",
+      cover:
+        "https://app.oxygenstones.com/storage/uploads/media/photo/c897fbbc-5c79-4a5c-9178-fc2cf3689425.jpg",
+      created_at: "1403-02-21 17:08:36",
+      media: null,
+    },
+    {
+      title: "Laibid Crystal quarry",
+      description:
+        '<div class="w-full h-svh  lg:h-fit  " style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; height: fit-content; width: 512px; color: #000000; font-family: Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">\r\n<div style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000;">\r\n<p class="text-gray-80 text-base 2xl:text-sm text-justify" style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; margin: 0px; text-align: justify; font-size: 16px; --tw-text-opacity: 1; color: rgb(68 68 68/var(--tw-text-opacity));">Lorem ipsum dolor sit amet consectetur. Viverra sed tellus purus venenatis vulputate. Sapien morbi nec eu leo a facilisi a turpis ultricies. Enim cras scelerisque massa ornare. Ac vestibulum mus egestas proin sit. Porttitor ut diam tellus laoreet vitae venenatis posuere sapien. Tempus dui hendrerit quam dictumst volutpat ornare. Nunc augue odio amet nec. Lacus risus adipiscing orci cursus. Et pellentesque tristique lectus ornare amet eros aliquet nascetur pellentesque. Nullam lorem ut ullamcorper tincidunt. Blandit nisl ut tristique scelerisque blandit quam. Lobortis ultricies ante urna eu quam. Facilisis egestas fringilla sit tristique arcu ac. Odio vitae praesent elit auctor laoreet nec viverra. Nibh felis elementum augue et. Nunc facilisi pharetra velit quam accumsan praesent eu sed lorem. Semper in ut tristique lobortis enim tristique. Velit posuere sit lobortis auctor aliquam turpis aenean. Morbi rhoncus mattis pharetra laoreet.</p>\r\n</div>\r\n</div>\r\n<div class="w-full my-20 md:my-0 h-fit " style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; margin-top: 0px; margin-bottom: 0px; height: fit-content; width: 512px; color: #000000; font-family: Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>\r\n<p>&nbsp;</p>',
+      cover:
+        "https://app.oxygenstones.com/storage/uploads/media/photo/d7ece0f8-a414-4dca-a6a2-889c0909cab0.jpg",
+      created_at: "1403-02-23 04:47:36",
+      media: null,
+    },
+    {
+      title: "Abarkoh Travertine quarry",
+      description:
+        '<div class="w-full h-svh  lg:h-fit  " style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; height: fit-content; width: 512px; color: #000000; font-family: Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">\r\n<div style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000;">\r\n<p class="text-gray-80 text-base 2xl:text-sm text-justify" style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; margin: 0px; text-align: justify; font-size: 16px; --tw-text-opacity: 1; color: rgb(68 68 68/var(--tw-text-opacity));">Lorem ipsum dolor sit amet consectetur. Viverra sed tellus purus venenatis vulputate. Sapien morbi nec eu leo a facilisi a turpis ultricies. Enim cras scelerisque massa ornare. Ac vestibulum mus egestas proin sit. Porttitor ut diam tellus laoreet vitae venenatis posuere sapien. Tempus dui hendrerit quam dictumst volutpat ornare. Nunc augue odio amet nec. Lacus risus adipiscing orci cursus. Et pellentesque tristique lectus ornare amet eros aliquet nascetur pellentesque. Nullam lorem ut ullamcorper tincidunt. Blandit nisl ut tristique scelerisque blandit quam. Lobortis ultricies ante urna eu quam. Facilisis egestas fringilla sit tristique arcu ac. Odio vitae praesent elit auctor laoreet nec viverra. Nibh felis elementum augue et. Nunc facilisi pharetra velit quam accumsan praesent eu sed lorem. Semper in ut tristique lobortis enim tristique. Velit posuere sit lobortis auctor aliquam turpis aenean. Morbi rhoncus mattis pharetra laoreet.</p>\r\n</div>\r\n</div>\r\n<div class="w-full my-20 md:my-0 h-fit " style="box-sizing: border-box; border: 0px solid; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; margin-top: 0px; margin-bottom: 0px; height: fit-content; width: 512px; color: #000000; font-family: Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>',
+      cover:
+        "https://app.oxygenstones.com/storage/uploads/media/photo/c897fbbc-5c79-4a5c-9178-fc2cf3689425.jpg",
+      created_at: "1403-02-23 17:56:05",
+      media: null,
+    },
+  ],
+};
+
+export function useQuarries(locale: string) {
+  const { data, error, isLoading } = useSWR(
+    `/api/client/page/${locale}/quarries`,
+    fetcher
+  );
+
+  return {
+    data: data?.data || init,
+    isLoading,
+    isError: error,
+  };
+}

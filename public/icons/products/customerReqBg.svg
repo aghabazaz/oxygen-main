@@ -1,0 +1,17 @@
+<svg width="1618" height="395" viewBox="0 0 1618 395" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1729_3461" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1931" height="395">
+<path d="M0 3.05176e-05L0 394.129L1931 394.129V3.05176e-05L0 3.05176e-05Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1729_3461)">
+<path d="M-17.1328 -19.2681L868.473 180.731L1922.32 -77.9863" stroke="#CFD2D3" stroke-width="4.38" stroke-miterlimit="10"/>
+<path d="M-17.4414 -36.8529L874.965 161.874L1922.42 -96.0332" stroke="#CFD2D3" stroke-width="4.32" stroke-miterlimit="10"/>
+<path d="M-17.748 -54.4468L881.46 143.024L1922.51 -114.072" stroke="#CFD2D3" stroke-width="4.26" stroke-miterlimit="10"/>
+<path d="M-18.0566 -72.0316L887.943 124.167L1922.6 -132.119" stroke="#CFD2D3" stroke-width="4.19" stroke-miterlimit="10"/>
+<path d="M-18.373 -89.6251L894.438 105.309L1922.69 -150.166" stroke="#CFD2D3" stroke-width="4.13" stroke-miterlimit="10"/>
+<path d="M-18.6816 -107.219L900.93 86.4509L1922.79 -168.213" stroke="#CFD2D3" stroke-width="4.06" stroke-miterlimit="10"/>
+<path d="M-18.9902 -124.804L907.423 67.5932L1922.88 -186.26" stroke="#CFD2D3" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M-19.2969 -142.397L913.918 48.7355L1922.97 -204.307" stroke="#CFD2D3" stroke-width="3.93" stroke-miterlimit="10"/>
+<path d="M-19.6055 -159.983L920.4 29.8773L1923.07 -222.354" stroke="#CFD2D3" stroke-width="3.87" stroke-miterlimit="10"/>
+<path d="M-19.9238 -177.576L926.893 11.0197L1923.16 -240.392" stroke="#CFD2D3" stroke-width="3.8" stroke-miterlimit="10"/>
+</g>
+</svg>

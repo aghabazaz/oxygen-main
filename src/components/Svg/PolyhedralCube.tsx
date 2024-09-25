@@ -1,0 +1,74 @@
+import React from "react";
+
+const PolyhedralCube = ({
+  strokeColor = "#7A7A7A",
+}: {
+  strokeColor?: string;
+}) => {
+  return (
+    <svg
+      width="122"
+      height="123"
+      viewBox="0 0 122 123"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M60.8782 68.8137L34.9391 83.7875L19.1032 74.6498L9 68.8137L34.9391 53.8398L60.8782 68.8137Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M60.8783 68.814V98.7616L34.9392 113.735V83.7878L60.8783 68.814Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M34.9391 83.7878V113.735L9 98.7616V68.814L19.1032 74.6501L34.9391 83.7878Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M112.61 68.8137L86.6708 83.7875L70.8435 74.6498L60.7317 68.8137L86.6708 53.8398L112.61 68.8137Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M112.61 68.814V98.7616L86.6709 113.735V83.7878L112.61 68.814Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M86.6708 83.7878V113.735L60.7317 98.7616V68.814L70.8435 74.6501L86.6708 83.7878Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M86.7742 24.2285L60.8351 39.2109L44.9992 30.0646L34.896 24.2285L60.8351 9.25464L86.7742 24.2285Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M86.7743 24.2285V54.1848L60.8352 69.1586V39.211L86.7743 24.2285Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+      <path
+        d="M60.8351 39.211V69.1586L34.896 54.1848V24.2285L44.9992 30.0646L60.8351 39.211Z"
+        stroke={strokeColor}
+        strokeWidth="4"
+        stroke-linejoin="bevel"
+      />
+    </svg>
+  );
+};
+
+export default PolyhedralCube;

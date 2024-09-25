@@ -1,0 +1,85 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
+    colors: {
+      "gray-light": "#D9D9D9",
+      yellow: "#FFC62F",
+      "gray-10": "#F7F9FF",
+      "gray-20": "#ECECEC",
+      "gray-40": "#B9B9B9",
+      "gray-50": "#9B9B9B",
+      "gray-60": "#7A7A7A",
+      "gray-70": "#656565",
+      "gray-80": "#444444",
+      black: "#000000",
+      white: "#fff",
+      transparent: "transparent",
+      green: "#83EA00",
+      red: "#EA0000",
+    },
+    fontSize: {
+      12: "12px",
+      "2xsm": "14px",
+      base: "16px",
+      xs: "18px",
+      sm: "21px",
+      md: "24px",
+      lg: "30px",
+      xl: "40px",
+      "2xl": "50px",
+    },
+    fontFamily: {
+      helvetica: ["Helvetica", "sans-serif"],
+      helveticaBold: ["HelveticaBold", "sans-serif"],
+      helveticaLight: ["HelveticaLight", "sans-serif"],
+      helveticaBoldOblique: ["HelveticaBoldOblique", "sans-serif"],
+      helveticaOblique: ["HelveticaOblique", "sans-serif"],
+    },
+    borderRadius: {
+      xsm: "5px",
+      8: "8px",
+      sm: "16px",
+      lg: "100px",
+      full: "9999px",
+    },
+    borderWidth: {
+      DEFAULT: "1px",
+      0: "0",
+      2: "2px",
+      3: "3px",
+      4: "4px",
+      5: "5px",
+      6: "6px",
+      8: "8px",
+    },
+    screens: {
+      "2xsm": "320px",
+      xsm: "375px",
+      mxs: "400px",
+      xs: "425px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      1370: "1370px",
+      1440: "1440px",
+      "2xl": "1536px",
+      "4k": "2560px",
+    },
+  },
+  plugins: [],
+};
+export default config;

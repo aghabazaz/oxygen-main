@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# how to bypass , skip or disable husky pre-push hook
+# export HUSKY=0
+# then you can git push as before # yolo!
+# see https://typicode.github.io/husky/#/?id=bypass-hooks
+if [ -x "$(command -v pnpm)" ]; then
+    pnpm lint;
+    pnpm build
+    exit
+fi
+if [ -x "$(command -v yarn)" ]; then
+    yarn lint
+    yarn build
+    exit
+fi
+if [ -x "$(command -v npm)" ]; then
+    npm run lint
+    npm run build
+    exit
+fi
+echo $"\n install yarn, pnpm or npm \b"
+exit 1
