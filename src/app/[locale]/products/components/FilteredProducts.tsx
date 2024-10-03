@@ -17,7 +17,6 @@ const FilteredProducts = ({
  const filterData = (item: Item) => {
   const index = selectedItems.indexOf(item);
   let filteredSelectedItem = [];
-
   if (index > 0) {
    setSelectedItems([
     ...selectedItems.slice(0, index),
@@ -28,19 +27,18 @@ const FilteredProducts = ({
     ...selectedItems.slice(index + 1),
    ];
   } else if (index === 0) {
-   filteredSelectedItem = [...selectedItems.slice(1)];
+      filteredSelectedItem = [...selectedItems.slice(1)];
    setSelectedItems([...selectedItems.slice(1)]);
   } else {
-   filteredSelectedItem = [...selectedItems, item];
-   setSelectedItems([...selectedItems, item]);
+      filteredSelectedItem = [...selectedItems, item];
+      setSelectedItems([...selectedItems, item]);
   }
-
   if (filteredSelectedItem.length > 0) {
    setproducts(
     allProducts.filter((product) => {
-     return filteredSelectedItem.every((item) => {
-      return product.features.includes(item.name);
-     });
+        return filteredSelectedItem.some((item)  => {
+            return product.features.includes(item.name);
+        });
     })
    );
   } else {
