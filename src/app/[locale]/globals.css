@@ -254,7 +254,6 @@
   line-clamp: 3;
   -webkit-box-orient: vertical;
   white-space: normal;
-  text-align: justify;
 }
 
 .blog .truncate{
