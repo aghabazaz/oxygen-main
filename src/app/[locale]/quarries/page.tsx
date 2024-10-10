@@ -36,11 +36,11 @@ const Quarries = async () => {
           isCamma={true}
           item={data.sections[1] || defaultSection}
         />
-        <Image
+          {leftSvg && <Image
           src={leftSvg}
           alt="svg"
           className="absolute top-0 left-0 hidden h-full lg:block w-fit "
-        />
+        />}
       </div>
       <QuarryGallery imageSrc={data.sections[2].cover} className="z-10">
         <h3 className="w-full text-sm text-gray-20 md:w-3/4 md:text-xl 2xl:text-2xl">
@@ -48,15 +48,15 @@ const Quarries = async () => {
         </h3>
       </QuarryGallery>
       <div className="relative flex items-center w-full h-full gap-10 px-8 md:h-screen lg:mt-10 lg:snap-start md:px-32">
-        <Image
+          {topSvg && <Image
           src={topSvg}
           alt="svg"
           className="absolute left-0 right-0 hidden w-full h-auto lg:block -top-48 "
-        />
+        />}
         <QuarryInfoLocation item={data.sections[3] || defaultSection} isCamma />
       </div>
       <QuarryGallery imageSrc={(data.sections?.[4] || defaultSection).cover}>
-        <Image src={cama} alt="cama" className="w-8 h-auto mb-2 2xl:w-10" />
+          {cama && <Image src={cama} alt="cama" className="w-8 h-auto mb-2 2xl:w-10" />}
         <h3 className="w-full text-sm text-black md:w-3/4 md:text-xl 2xl:text-2xl">
           {(data.sections?.[4] || defaultSection).title}
         </h3>

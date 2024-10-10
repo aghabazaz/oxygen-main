@@ -54,13 +54,13 @@ const QuarryInfoLocation = ({
         </div>
         <div className="w-full my-20 md:my-0 h-fit ">
           <div className="" ref={imageRef}>
-            <Image
+            {item?.cover && <Image
               src={item.cover}
               alt="oxygen-iran-map"
               className="w-full h-auto"
               width={720}
               height={650}
-            />
+            />}
           </div>
         </div>
       </div>
@@ -88,13 +88,13 @@ const QuarryInfoLocation = ({
         </div>
         <div className="w-full h-fit snap-start  py-20">
           <div className="" ref={imageRef}>
-            <Image
+            {item?.cover && <Image
               src={item.cover}
               alt="oxygen-iran-map"
               className="w-full h-auto"
               width={320}
               height={290}
-            />
+            />}
           </div>
         </div>
       </div>

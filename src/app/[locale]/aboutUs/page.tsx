@@ -10,7 +10,7 @@ const defaultSection = {
   description: "description",
   cover: "https://app.oxygenstones.com/uploads/2021/10/About-us-1-1.jpg",
 };
-const ABoutUs = async () => {
+const AboutUs = async () => {
   const locale = await getLocale();
   const res = await fetch(
     `https://app.oxygenstones.com/api/client/page/${locale}/about-us`
@@ -27,4 +27,4 @@ const ABoutUs = async () => {
   );
 };
 
-export default ABoutUs;
+export default AboutUs;

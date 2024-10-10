@@ -19,13 +19,13 @@ const ThirdSection = ({ item }: { item: any }) => {
             strokeWidth="2"
           />
         </svg>
-        <Image
-          src={item.cover}
+        {item?.cover &&<Image
+          src={item?.cover}
           alt="oxygen"
           width={883}
           height={484}
           className="w-full h-full object-contain relative z-10"
-        />
+        />}
         <Image
           src={arrowIcon}
           alt="oxygen"
