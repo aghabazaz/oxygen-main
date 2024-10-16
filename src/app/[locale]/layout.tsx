@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Script from "next/script";
+import GoogleAnalytics from "@/components/Analytics/google-analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,8 +36,13 @@ export default async function RootLayout({
       className={`h-screen overflow-hidden ${locale === "fa" ? "font-Anjoman" : "ltr"}`}
       dir={locale === "en" ? "ltr" : "rtl"}
     >
+    <head>
+      <GoogleAnalytics GA_MEASUREMENT_ID='G-YWE2NEV3CT' />
+    </head>
       <body className="font-helvetica overflow-y-scroll h-screen snap-y snap-mandatory scroll-smooth">
-        <NextIntlClientProvider messages={messages}>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KVF8GKM"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <NextIntlClientProvider messages={messages}>
           <TopMenu />
           <main>{children}</main>
           <Footer />
