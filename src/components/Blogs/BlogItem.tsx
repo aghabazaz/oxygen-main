@@ -9,8 +9,8 @@ const BlogItem = ({ blog }: { blog: TBlogItem }) => {
   const locale = useLocale();
   const t = useTranslations("Index");
   return (
-    <div key={blog.id} className="w-full drop-shadow-xl h-[400px] ">
-      <div className=" w-full left-image-pentagon bg-white h-[150px] ">
+    <div key={blog.id} className="w-full drop-shadow-xl h-[400px] mb-10">
+      <div className=" w-full left-image-pentagon bg-white h-[150px]">
         <Image
           src={blog.cover}
           alt={blog.title}
