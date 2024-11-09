@@ -5,7 +5,7 @@ export const getBlog = async (blogId: string): Promise<{ data: TBlogItem }> => {
     `https://app.oxygenstones.com/api/client/post/${blogId}`,
     {
       method: "GET",
-      cache: "no-cache",
+        next: { revalidate: 20 }, // Cache for 20 seconds
     }
   );
   return data.json();

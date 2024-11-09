@@ -10,5 +10,7 @@ export type TBlogItem = {
   image1: string;
   image2: string;
   id: number;
-  summary:string
+  summary:string;
+  meta_title:string;
+  meta_description:string;
 };

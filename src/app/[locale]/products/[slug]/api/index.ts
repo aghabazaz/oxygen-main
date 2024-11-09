@@ -28,6 +28,8 @@ export const getProduct = async (productId: string) => {
       technicalAnalysisImage: data.cover,
       technicalAnalysisImageMobile: data.cover_mobile || data.cover,
       laibidMap: data.images[2]?.url || data.images[0].url,
+      meta_title:data.meta_title,
+      meta_description:data.meta_description
     } as TProductItem,
   };
 };

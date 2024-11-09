@@ -37,11 +37,11 @@ export default async function RootLayout({
       dir={locale === "en" ? "ltr" : "rtl"}
     >
     <head>
-      <GoogleAnalytics GA_MEASUREMENT_ID='G-YWE2NEV3CT' />
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-YWE2NEV3CT" />
     </head>
       <body className="font-helvetica overflow-y-scroll h-screen snap-y snap-mandatory scroll-smooth">
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KVF8GKM"
-                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                        height="0" width="0" className="hidden"></iframe></noscript>
       <NextIntlClientProvider messages={messages}>
           <TopMenu />
           <main>{children}</main>

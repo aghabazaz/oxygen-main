@@ -11,6 +11,7 @@ import QuarryGallery from "./components/QuarryGallery";
 import QuarryInfoLocation from "./components/QuarryInfoLocation";
 import VideoSection from "./components/VideoSection";
 import { getLocale } from "next-intl/server";
+import {getBlog} from "@/app/[locale]/blogs/[slug]/api";
 
 const defaultSection = {
   title: "title",
@@ -19,11 +20,24 @@ const defaultSection = {
     "https://app.oxygenstones.com/storage/uploads/media/photo/d7ece0f8-a414-4dca-a6a2-889c0909cab0.jpg",
   created_at: "2021-10-10",
 };
+export async function generateMetadata() {
+    const locale = await getLocale();
+    const res = await fetch(
+        `https://app.oxygenstones.com/api/client/page/${locale}/quarries`,
+        { next: { revalidate: 20 } }
+    );
+    const { data } = await res.json();
+
+    return {
+        title: data.sections[0]?.meta_title || "Oxygen",
+        description:data.sections[0]?.meta_description || "Explore in the world"
+    };
+}
 const Quarries = async () => {
   const locale = await getLocale();
   const res = await fetch(
     `https://app.oxygenstones.com/api/client/page/${locale}/quarries`,
-    { cache: "no-cache" }
+    { next: { revalidate: 20 } }
   );
 
   const { data } = await res.json();

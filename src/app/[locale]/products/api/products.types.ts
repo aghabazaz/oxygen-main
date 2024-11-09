@@ -15,4 +15,6 @@ export type TProductItem = {
  useLocationDescription: string;
  laibidMap: string;
  features: string[];
+ meta_title:string;
+ meta_description:string;
 };

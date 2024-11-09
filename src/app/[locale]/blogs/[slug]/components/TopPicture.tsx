@@ -24,7 +24,7 @@ const TopPicture = async ({
           fill
         />
         <div className="px-10 w-full my-5 md:my-0 md:w-[500px] hidden md:flex flex-col items-center justify-center text-center right-[calc(50%-250px)] md:absolute h-[140px] -bottom-[70px] md:bg-gray-20 rounded-8">
-          <h3 className="text-lg text-gray-80">{title}</h3>
+          <h1 className="text-lg text-gray-80">{title}</h1>
           <div
             id="metd-date"
             className="flex items-center gap-2  justify-center"

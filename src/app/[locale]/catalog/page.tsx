@@ -8,11 +8,25 @@ import downloadIcon from "~/public/icons/catalog/download.svg";
 import Button from "@/components/common/Button";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
+export async function generateMetadata() {
+  const locale = await getLocale();
+  const res = await fetch(
+      `https://app.oxygenstones.com/api/client/page/${locale}/catalog`,
+      { next: { revalidate: 20 } }
+  );
+  const { data } = await res.json();
+
+  return {
+    title: data.sections[0]?.meta_title || "Oxygen",
+    description:data.sections[0]?.meta_description || "Explore in the world"
+  };
+}
 const catalog = async () => {
   const t = await getTranslations("catalog");
   const locale = await getLocale();
   const res = await fetch(
-    `https://app.oxygenstones.com/api/client/page/${locale}/catalog`
+    `https://app.oxygenstones.com/api/client/page/${locale}/catalog`,
+      { next: { revalidate: 20 } }
   );
   const { data } = await res.json();
   return (

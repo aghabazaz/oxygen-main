@@ -13,7 +13,7 @@ const Blogs = async () => {
   return (
     <>
       <section className="w-full min-h-screen h-full  pb-10  bg-gray-20 relative px-8 xl:px-32 blog">
-        <div className="w-full  h-14 flex items-center  lg:pt-28 justify-start">
+        <div className="w-full  h-14 flex items-center  lg:pt-2 justify-start">
           <Suspense>
             <BreadCrumb />
           </Suspense>

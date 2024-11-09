@@ -8,7 +8,15 @@ import ProductDetail from "./components/ProductDetail";
 import ProductFunctionality from "./components/ProductFunctionality";
 import ProductImageViewer from "./components/ProductImageViewer";
 import ProductMobileView from "./components/ProductMobileView";
+export async function generateMetadata(context: any) {
+ const { data: product } = await getProduct(context.searchParams.productId);
 
+
+ return {
+  title: product?.meta_title || "Oxygen",
+  description:product?.meta_description || "generateMetadata"
+ };
+}
 const Product = async (context: any) => {
  const { data: product } = await getProduct(context.searchParams.productId);
 

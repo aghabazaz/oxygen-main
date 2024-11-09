@@ -10,10 +10,24 @@ const defaultSection = {
   description: "description",
   cover: "https://app.oxygenstones.com/uploads/2021/10/About-us-1-1.jpg",
 };
+export async function generateMetadata() {
+    const locale = await getLocale();
+    const res = await fetch(
+        `https://app.oxygenstones.com/api/client/page/${locale}/about-us`,
+        { next: { revalidate: 20 } }
+    );
+    const { data } = await res.json();
+
+    return {
+        title: data.sections[0]?.meta_title || "Oxygen",
+        description:data.sections[0]?.meta_description || "Explore in the world"
+    };
+}
 const AboutUs = async () => {
   const locale = await getLocale();
   const res = await fetch(
-    `https://app.oxygenstones.com/api/client/page/${locale}/about-us`
+    `https://app.oxygenstones.com/api/client/page/${locale}/about-us`,
+      { next: { revalidate: 20 } }
   );
   const { data } = await res.json();
   return (
