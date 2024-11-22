@@ -270,3 +270,7 @@ h3{
   font-size:22px;
   font-weight:bold;
 }
+
+:lang(en) > p{
+  text-justify: distribute;
+}
