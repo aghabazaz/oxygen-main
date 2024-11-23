@@ -278,6 +278,9 @@ h3{
     transform: scale(1.5);
     margin-bottom:40px !important;
   }
+  main .blog-page{
+    overflow-x:hidden;
+  }
   :lang(en) > p{
     word-spacing: -3px;
   }

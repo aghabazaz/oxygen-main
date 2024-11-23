@@ -17,7 +17,7 @@ export async function generateMetadata(context: any) {
 const Blog = async (context: any) => {
     const { data: blog } = await getBlog(context.searchParams.blogId);
     return (
-        <div className="w-full h-full md:snap-none  bg-white relative ">
+        <div className="w-full h-full md:snap-none  bg-white relative blog-page">
             <div className="w-full px-8 xl:px-32 hidden lg:flex  h-14  items-center justify-start">
                 <Suspense>
                     <BreadCrumb title={blog.title} />
