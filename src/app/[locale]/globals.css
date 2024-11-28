@@ -285,3 +285,24 @@ h3{
     word-spacing: -3px;
   }
 }
+:lang(en) .blog-page{
+
+}
+
+:lang(fa) .blog-page ol{
+    list-style:arabic-indic !important;
+    padding-right:20px;
+}
+:lang(en) .blog-page ol{
+  list-style:image-set !important;
+  padding-left:20px ;
+}
+:lang(en) .blog-page ul{
+  list-style:disc !important;
+   padding-left:20px;
+}
+:lang(fa) .blog-page ul{
+  list-style:disc !important;
+  padding-right:20px;
+}
+
