@@ -20,7 +20,7 @@ const TopPicture = async ({
         <Image
           src={cover}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full"
           fill
         />
         <div className="px-10 w-full my-5 md:my-0 md:w-[500px] hidden md:flex flex-col items-center justify-center text-center right-[calc(50%-250px)] md:absolute h-[140px] -bottom-[70px] md:bg-gray-20 rounded-8">
