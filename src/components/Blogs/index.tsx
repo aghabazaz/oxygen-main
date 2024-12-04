@@ -32,7 +32,7 @@ const Blogs = forwardRef(({}, ref?: Ref<SVGSVGElement>) => {
         <Image
           src={blogsBackground}
           alt="blogsBackground"
-          className="w-full object-cover hidden lg:block h-[40vh]"
+          className="w-full object-cover hidden lg:block"
         />
         <Image
           src={blogsBackgroundMobile}
