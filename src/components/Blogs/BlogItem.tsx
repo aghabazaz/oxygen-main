@@ -14,7 +14,7 @@ const BlogItem = ({ blog }: { blog: TBlogItem }) => {
         <Image
           src={blog.cover}
           alt={blog.title}
-          className="h-[150px] w-full object-cover right-image-pentagon"
+          className="h-[150px] w-full object-cover right-image-pentagon blog-img"
           width={300}
           height={100}
         />

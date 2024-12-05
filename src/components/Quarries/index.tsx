@@ -79,7 +79,7 @@ const Quarries = () => {
                 alt="rightLinemobileOxygen"
                 className="w-1/2 md:hidden h-auto absolute -top-10 z-10"
               />
-              <div className="hidden md:flex  absolute justify-between items-center w-1/2 md:w-full z-30">
+              <div className="hidden md:flex  absolute justify-between items-center z-30 with-quarries">
                 <div className={`bottom-[87%] absolute w-1/3 `}>
                   <LinkButton
                     title={t("see more")}
