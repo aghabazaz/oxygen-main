@@ -295,6 +295,9 @@ h3{
     max-height:150px;
     height:100px !important;
   }
+  .quarries-section{
+    justify-content: flex-end !important;
+  }
 }
 :lang(fa) .blog-page ol{
     list-style:arabic-indic !important;
