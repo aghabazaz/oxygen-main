@@ -44,7 +44,7 @@ const Blogs = forwardRef(({}, ref?: Ref<SVGSVGElement>) => {
             loop={true}
             breakpoints={swiperBreakpoints}
             slidesPerView={3}
-            className="h-[500px] w-full flex items-center justify-between "
+            className="h-[550px] w-full flex items-center justify-between "
             onSlideChangeTransitionEnd={(e) => {
               setActiveIndex(e.realIndex);
             }}

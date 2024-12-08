@@ -73,7 +73,8 @@ const Quarries = () => {
               title={t("see more")}
               className="mt-5 md:hidden z-20"
             />
-            <div className="flex w-full absolute lg:static top-full  h-fit md:h-full justify-end">
+
+            <div className="text-2xsm text-justify md:text-sm text-gray-80 sm:text-base">
               <Image
                 src={rightLinemobile}
                 alt="rightLinemobileOxygen"
