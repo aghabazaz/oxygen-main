@@ -39,7 +39,7 @@ const Blogs = forwardRef(({}, ref?: Ref<SVGSVGElement>) => {
           alt="blogsBackground"
           className="w-full h-[400px] lg:hidden"
         />
-        <div className="absolute w-full px-8 md:px-40 2xl:px-60 h-full top-[20svh] lg:top-[50px] 2xl:top-[20vh] ">
+        <div className="absolute w-full px-8 md:px-40 2xl:px-60 h-full top-[20svh] lg:top-[20px] 2xl:top-[20vh] ">
           <Swiper
             loop={true}
             breakpoints={swiperBreakpoints}

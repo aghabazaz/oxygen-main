@@ -59,7 +59,6 @@ const BlogItem = ({ blog }: { blog: TBlogItem }) => {
             },
           }}
           title={t("see more")}
-          className="mt-5"
         />
       </div>
     </div>
