@@ -74,7 +74,7 @@ const Quarries = () => {
               className="mt-5 md:hidden z-20"
             />
 
-            <div className="text-2xsm text-justify md:text-sm text-gray-80 sm:text-base">
+            <div className="flex w-full absolute lg:static top-full  h-fit md:h-full justify-start">
               <Image
                 src={rightLinemobile}
                 alt="rightLinemobileOxygen"
