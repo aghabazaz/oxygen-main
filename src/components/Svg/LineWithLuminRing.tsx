@@ -28,7 +28,7 @@ const LineWithLuminRing = forwardRef(({}, ref?: Ref<SVGSVGElement>) => {
           width="68.2"
           height="68.2"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
