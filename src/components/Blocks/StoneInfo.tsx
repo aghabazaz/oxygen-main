@@ -14,13 +14,13 @@ const StoneInfo = ({ stonInfo }: { stonInfo: ISliderData }) => {
       key={Math.random()}
     >
       <div className="flex flex-col rotate-text-header md:h-fit md:items-start md:mt-24 justify-center w-full  md:ml-2 ">
-        <h3 className="text-gray-40  mb-2 text-sm">
+        <span className="text-gray-40  mb-2 text-sm">
           {stonInfo.leftData.header}
-        </h3>
+        </span>
         <div className="w-fit rotate-text-body">
-          <h5 className="text-black  border-yellow text-[28px]  ">
+          <p className="text-black  border-yellow text-[28px]  ">
             {stonInfo.leftData.body}
-          </h5>
+          </p>
           <div className="w-full h-[5px] bg-yellow my-2"></div>
         </div>
         <p className="text-gray-40 text-sm">{stonInfo.leftData.footer}</p>

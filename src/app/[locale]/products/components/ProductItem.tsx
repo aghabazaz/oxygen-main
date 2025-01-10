@@ -28,9 +28,9 @@ const ProductItem = ({ item }: { item: TProductItem }) => {
       <div className="flex flex-col justify-between gap-8 h-[45%] ">
         <div className="flex flex-col">
           <div className="flex w-full items-center justify-between">
-            <h4 className="text-xs 2xl:text-sm truncate w-1/2 font-helveticaBold pt-4 pb-2">
+            <h1 className="text-xs 2xl:text-sm truncate w-1/2 font-helveticaBold pt-4 pb-2">
               {item.label}
-            </h4>
+            </h1>
             <div className="flex items-center">
               <span
                 className={`w-2 h-2 mx-1  rounded-full ${item.isAvailable ? "bg-green drop-shadow-[0px_2px_4px_#83EA00]" : "bg-red drop-shadow-[0px_2px_4px_#EA0000]"}`}
@@ -46,9 +46,9 @@ const ProductItem = ({ item }: { item: TProductItem }) => {
               src={generateCategoryIcon(item.category)}
               className="w-6 h-auto mr-2"
             />
-            <h5 className="text-gray-60 text-xs 2xl:text-sm mx-1">
+            <span className="text-gray-60 text-xs 2xl:text-sm mx-1">
               {item.category}
-            </h5>
+            </span>
           </div>
         </div>
         <LinkButton

@@ -24,12 +24,12 @@ const BlogItem = ({ blog }: { blog: TBlogItem }) => {
         className="p-4 flex h-auto lg:h-[300px] flex-col justify-between bg-white"
       >
         <div className="flex flex-col gap-2">
-          <h5 className="font-helveticaBold text-[19px] text-gray-80">
+          <span className="font-helveticaBold text-[19px] text-gray-80">
             {blog.title}
-          </h5>
-          <h6 className="text-gray-60 font-helveticaBold text-base">
+          </span>
+          <span className="text-gray-60 font-helveticaBold text-base">
             {blog.tags}
-          </h6>
+          </span>
           <div
             id="metd-date"
             className="flex items-center gap-2  justify-start"

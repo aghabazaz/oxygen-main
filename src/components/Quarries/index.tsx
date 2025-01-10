@@ -42,9 +42,9 @@ const Quarries = () => {
         </div>
         <div className="w-full md:w-1/2 min-h-[50svh] lg:min-h-full pb-10 lg:pb-0 h-full pr-18  flex flex-col relative items-center xl:pt-24 1370:pt-9 1440:pt-40 justify-center">
           <div className="h-fit flex flex-col mt-8 sm:mt-0 sm:gap-1">
-            <h3 className="font-helveticaBold text-xl sm:text-2xl text-gray-80">
+            <h2 className="font-helveticaBold text-xl sm:text-2xl text-gray-80">
               {data.sections[0].title}
-            </h3>
+            </h2>
             <p
               className="text-2xsm text-justify md:text-sm text-gray-80 sm:text-base"
               dangerouslySetInnerHTML={{ __html: data.sections[0].description }}
