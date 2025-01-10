@@ -5,9 +5,8 @@ const MouseSection = forwardRef(
   ({ children }: { children?: React.ReactNode }, ref?: Ref<SVGSVGElement>) => {
     const locale = useLocale();
     const scrollToButton = () => {
-        console.log('aa');
       document.querySelector("body")?.scrollTo({
-        top: 0,
+        top: document.body.offsetHeight,
         left: 0,
         behavior: "smooth",
       });
