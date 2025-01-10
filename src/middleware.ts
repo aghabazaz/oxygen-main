@@ -7,6 +7,13 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: "en",
+  alternateLinks: false,
+  localeDetection: false,
+  localePrefix: "as-needed",
+  pathnames: { // shortened for conciseness
+    "/": { "en": "/", fa: "/" }
+  },
+
 });
 // export function middleware(request: NextRequest) {
 //   console.log(
@@ -32,5 +39,6 @@ export default createMiddleware({
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ["/", "/(fa|en)/:path*"],
+  matcher: ["/",  "/((?!api|_next|_vercel|.*\\..*).*)",
+  ],
 };
