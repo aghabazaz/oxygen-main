@@ -1,13 +1,7 @@
 export const scrollTop = () => {
-  document
-    .querySelector("body")
-    ?.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  console.log('eee');
 };
 
 export const scrollBottom = () => {
-  document.querySelector("body")?.scrollTo({
-    top: document.body.offsetHeight,
-    left: 0,
-    behavior: "smooth",
-  });
+  console.log('ggg');
 };

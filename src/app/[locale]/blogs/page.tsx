@@ -11,8 +11,7 @@ const Blogs = async () => {
   const locale = await getLocale();
   const { data } = await getBlogs(locale);
   return (
-    <>
-      <section className="w-full min-h-screen h-full  pb-10  bg-gray-20 relative px-8 xl:px-32 blog">
+      <section className="relative w-full snap-start  min-h-screen h-full  pb-10  bg-gray-20 relative px-8 xl:px-32 blog">
         <div className="w-full  h-14 flex items-center  lg:pt-2 justify-start">
           <Suspense>
             <BreadCrumb />
@@ -27,7 +26,6 @@ const Blogs = async () => {
         )}
         <BlogsPagination totalCount={data.length} currentPage={1} />
       </section>
-    </>
   );
 };
 
