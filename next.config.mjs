@@ -35,7 +35,7 @@ const nextConfig = {
         source: `/${dir}/:path*`,
         destination: `/${dir}/:path*`,
       })),
-      ...["fr", "es", "pt", "ru", "ja", "ko"].map((locale) => ({
+      ...["fa", "en"].map((locale) => ({
         source: `/${locale}/:path*`,
         destination: `/${locale}/:path*`,
       })),

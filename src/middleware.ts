@@ -11,7 +11,9 @@ export default createMiddleware({
   localeDetection: false,
   localePrefix: "as-needed",
   pathnames: { // shortened for conciseness
-    "/": { "en": "/", fa: "/" }
+    "/": { "en": "/", fa: "/" },
+    "/blog": { "en": "/blog", "fr": "/blog", "es": "/blog" }
+
   },
 
 });
@@ -38,7 +40,7 @@ export default createMiddleware({
 // }
 
 export const config = {
+
   // Match only internationalized pathnames
-  matcher: ["/",  "/((?!api|_next|_vercel|.*\\..*).*)",
-  ],
+  matcher: ["/",  "/((?!api|_next|_vercel|.*\\..*).*)"],
 };
