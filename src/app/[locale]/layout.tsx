@@ -39,7 +39,7 @@ export default async function RootLayout({
     <head>
       <GoogleAnalytics GA_MEASUREMENT_ID="G-YWE2NEV3CT" />
     </head>
-      <body className="font-helvetica overflow-y-scroll h-screen snap-y snap-mandatory scroll-smooth">
+      <body className="font-helvetica overflow-y-scroll h-screen snap-y  scroll-smooth">
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KVF8GKM"
                         height="0" width="0" className="hidden"></iframe></noscript>
       <NextIntlClientProvider messages={messages}>
