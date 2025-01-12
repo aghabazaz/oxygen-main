@@ -34,7 +34,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       className={`h-screen overflow-hidden ${locale === "fa" ? "font-Anjoman" : "ltr"}`}
-      dir={locale === "en" ? "ltr" : "rtl"}
+      dir={locale === "fa" ? "rtl" : "ltr"}
     >
     <head>
       <GoogleAnalytics GA_MEASUREMENT_ID="G-YWE2NEV3CT" />
