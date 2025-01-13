@@ -22,7 +22,7 @@ const Slider = ({ item }: { item: ISlider }) => {
         />
 
         <div
-          className={`absolute main-content w-fit  ${isRendered ? "" : "firstSliderInfo"} lg:w-[200px] xl:w-[300px] bottom-[240px] lg:bottom-[160px]   h-fit left-[calc(50%+100px)] lg:left-[calc(50%+290px)]  text-white   flex  flex-col justify-end gap-5 z-20`}
+          className={`absolute main-content w-fit  ${isRendered ? "" : "firstSliderInfo"} lg:w-[200px] xl:w-[300px] bottom-[240px] lg:bottom-[160px]   h-fit left-[calc(10%)] lg:left-[calc(50%+290px)]  text-white   flex  flex-col justify-end gap-5 z-20`}
         >
           <Image src={logo} alt="oxygenLogo" className="w-52 lg:w-80" />
           <div className="flex gap-5 w-full justify-between items-center">
